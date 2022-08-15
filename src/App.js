@@ -1,16 +1,14 @@
-import React from "react";
 import './App.css';
-import Header from './Header/Header';
-import Footer from './Footer/Footer';
-import Error from './Error-page/Error';
+import { BrowserRouter as Router } from "react-router-dom";
+import Home from './pages';
 
 function App() {
 
   return (
     <>
-      <Header></Header>
-      
-      <Footer></Footer>
+      <Router>
+          <Home />
+      </Router>
     </>
   );
 }
