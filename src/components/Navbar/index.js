@@ -1,5 +1,7 @@
 import React from 'react'
 import { FaBars } from 'react-icons/fa';
+import logo from '../../images/logo.svg';
+import pdf from '../../assets/CV.pdf';
 import {
     Nav,
     NavbarContainer,
@@ -17,26 +19,26 @@ const Navbar = ({toggle}) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to='/'></NavLogo>
+          <NavLogo to='/' src={logo}></NavLogo>
           <MobileIcon  onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem >
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks to="about">Sobre</NavLinks>
             </NavItem>
             <NavItem >
-              <NavLinks to="discover">Discover</NavLinks>
+              <NavLinks to="discover">Descubra</NavLinks>
             </NavItem>
             <NavItem >
-              <NavLinks to="services">Services</NavLinks>
+              <NavLinks to="services">Projetos</NavLinks>
             </NavItem>
             <NavItem >
-              <NavLinks to="signup">Sing Up</NavLinks>
+              <NavLinks to="signup">Entre em Contato</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/signin">Sign In </NavBtnLink>
+            <NavBtnLink onClick={()=> window.open(pdf)}> <span>Curriculo</span> <FaBars /></NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

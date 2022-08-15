@@ -32,16 +32,15 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled.img`
-  color: #fff;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
   display: flex;
   align-items: center;
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
-  background-image: url(./images/Neon.png);
+  height: 7rem;
+  margin-top: -1rem;
 `;
 
 export const MobileIcon = styled.div`
@@ -85,7 +84,7 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 2px solid #01bf71;
+    border-bottom: 2px solid #b67c37;
   }
 `;
 
@@ -98,9 +97,9 @@ export const NavBtn = styled.nav`
   }
 `;
 
-export const NavBtnLink = styled(LinkR)`
+export const NavBtnLink = styled.button`
   border-radius: 50px;
-  background-color: #01bf71;
+  background-color: #b67c37;
   white-space: nowrap;
   padding: 10px 22px;
   color: #010606;
@@ -114,6 +113,6 @@ export const NavBtnLink = styled(LinkR)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #01bf71;
+    color: #b67c37;
   }
 `;
