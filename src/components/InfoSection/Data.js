@@ -1,18 +1,19 @@
 export const homeObj1 = {
   id: 'about',
-  lightBg: true,
-  lightText: false,
+  lightBg: false,
+  lightText: true,
   lightTextDesc: true,
   topLine: 'Olá!',
   headline: 'Sou Danielle Grotta',
-  description: 'Desenvolvedora full-stack com experiência em react, node, PHP, Perl e basicos da web como HTML, CSS e JavaScript. Com um ano de experiência desenvolvendo aplicações web usando as tecnologias mais recentes.',
+  description: 'Desenvolvedora full-stack com experiência em react, node, PHP, Perl e basicos da web como HTML, CSS e JavaScript.',
   buttonLabel: 'Saiba Mais',
   imgStart: false,
   img: require('../../images/svg-2.svg').default,
   alt: 'Car',
   dark: true,
   primary: true,
-  darkText: true
+  darkText: false,
+  to: 'home'
 };
 
 export const homeObj2 = {
@@ -22,14 +23,15 @@ export const homeObj2 = {
   lightTextDesc: false,
   topLine: 'Habilidades/Skills',
   headline: 'Experiência',
-  description: 'Formada em Jogos Digitais pela FATEC, estou á um ano na area de desenvolvimento Full-Stack. Com experiência em desenvolvimento de aplicações web usando as tecnologias mais recentes.',
+  description: 'Formada em Game Development pela FATEC, atualmente trabalho como desenvolvedora full-stack na empresa KaBuM! Desenvolvendo projetos web com as linguagens mais recentes.',
   buttonLabel: 'Ver projetos',
   imgStart: true,
   img: require('../../images/svg-3.svg').default,
   alt: 'outro',
   dark: false,
   primary: false,
-  darkText: true
+  darkText: true,
+  to: 'home'
 };
 export const homeObj3 = {
   id: 'signup',
@@ -39,11 +41,12 @@ export const homeObj3 = {
   topLine: 'Entre em contato!',
   headline: 'Contato',
   description: 'Estou disponivel para trabalhar em projetos e desenvolvimento de aplicações web. Entre em contato comigo e faça sua proposta!',
-  buttonLabel: 'Read More',
+  buttonLabel: 'Entre em contato',
   imgStart: false,
   img: require('../../images/svg-4.svg').default,
   alt: 'Car',
   dark: false,
   primary: false,
-  darkText: true
+  darkText: true,
+  to: 'footer'
 };

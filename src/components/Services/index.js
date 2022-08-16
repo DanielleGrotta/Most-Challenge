@@ -2,6 +2,8 @@ import React from 'react';
 import Icon1 from '../../images/crud2.svg';
 import Icon2 from '../../images/crud1.svg';
 import Icon3 from '../../images/shop.svg';
+import Video from '../../videos/video.mp4';
+import { HeroBg,VideoBg } from '../HeroSection/HeroElements';
 import { 
   ServicesContainer,
   ServicesH1,
@@ -15,6 +17,9 @@ import {
 const Services = () => {
   return (
     <ServicesContainer id="services">
+      <HeroBg>
+        <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
+      </HeroBg>
     <ServicesH1>Projetos</ServicesH1>
       <ServicesWrapper >
         <ServicesCard>
